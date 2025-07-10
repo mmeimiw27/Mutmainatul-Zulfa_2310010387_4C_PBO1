@@ -25,4 +25,8 @@ public class MenuItem {
     public int getStok() {
         return stok;
     }
+    // Mutator (Setter)
+    public void setStok(int stok) {
+        this.stok = stok;
+    }
 }
