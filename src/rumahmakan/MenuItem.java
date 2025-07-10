@@ -29,4 +29,10 @@ public class MenuItem {
     public void setStok(int stok) {
         this.stok = stok;
     }
+   
+    // Method
+    public void kurangiStok() {
+        if (stok > 0) stok--;
+    }
+
 }
