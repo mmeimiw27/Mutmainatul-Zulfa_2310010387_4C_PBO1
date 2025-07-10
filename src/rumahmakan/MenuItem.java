@@ -13,4 +13,16 @@ public class MenuItem {
         this.harga = harga;
         this.stok = 1; 
     }
+    // Accessor (Getter)
+    public String getNama() {
+        return nama;
+    }
+
+    public double getHarga() {
+        return harga;
+    }
+
+    public int getStok() {
+        return stok;
+    }
 }
