@@ -7,4 +7,8 @@ public class MenuMinuman extends MenuItem {
         super(nama, harga);
         this.dingin = dingin;
     }
+    @Override 
+    public String info() {
+        return "[MINUMAN] " + super.info() + " | " + (dingin ? "Dingin" : "Hangat");
+    }
 }
