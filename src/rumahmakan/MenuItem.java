@@ -34,5 +34,9 @@ public class MenuItem {
     public void kurangiStok() {
         if (stok > 0) stok--;
     }
-
+    
+    //Polymorphism (akan dioverride oleh subclass)
+    public String info() {
+        return nama + " - Rp" + harga + " [" + (stok > 0 ? "Tersedia" : "Habis") + "]";
+    }
 }
