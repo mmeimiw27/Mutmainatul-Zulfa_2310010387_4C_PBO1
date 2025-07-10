@@ -9,4 +9,9 @@ public class MenuMakanan extends MenuItem {
         this.jenis = jenis;
     }
     
+    //Polymorphism (mengoverride method info())
+    @Override
+    public String info() {
+        return "[MAKANAN] " + super.info() + " | Jenis: " + jenis;
+    }
 }
