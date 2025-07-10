@@ -11,5 +11,10 @@ public class MainMenu {
             new MenuMinuman("Teh Manis", 5000, true),
             new MenuMinuman("Kopi Hitam", 7000, false)
         };
+         // Input stok awal
+        for (MenuItem item : daftarMenu) {
+            int stok = InputMenu.inputInt("Masukkan stok untuk " + item.getNama() + ": ");
+            item.setStok(stok);
+        }
     }
 }
